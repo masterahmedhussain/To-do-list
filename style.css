@@ -40,7 +40,7 @@ form input,form button{
     align-items: center;
 }
 .list{
-    min-width: 30%;
+    min-width: 40%;
     list-style: none;
 }
 .todo{
@@ -52,13 +52,33 @@ form input,form button{
     justify-content: space-between;
     height: 4.5vh;
     font-size: 1.5rem;
+    transition: all 0.5s ease;
 }
 .todo li{
     flex: 1;
 
 }
-/* .completed-btn,.trashed-btn{
-    margin: 0;
-    padding: 1%;
+.trashed-btn,.completed-btn{
+    border: none;
+    cursor: pointer;
 }
-  */
+.trashed-btn{
+    color: white;
+    background-color: red;
+
+}
+.completed-btn{
+    color: wheat;
+    background-color: seagreen;
+}
+.fa-check,.fa-trash{
+    pointer-events: none;
+}
+
+.fall  {
+
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
+ 
+
