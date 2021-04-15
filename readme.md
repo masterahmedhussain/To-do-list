@@ -1,1 +1,1 @@
-This the TODO list app where you can add the task and delete the task when 
+This the TODO list app where you can add the task and delete the task when they are completed.

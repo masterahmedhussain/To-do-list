@@ -44,11 +44,11 @@ function addTodo(event) {
       todoDiv.appendChild(trashButton);
       todoList.appendChild(todoDiv);
       }
+      //clear TodoInput value
+      todoInput.value = ""
       
     
       
-      //clear TodoInput value
-      todoInput.value = ""
 
 }
 
@@ -65,10 +65,11 @@ function deleteCheck(e) {
     }
 
 
-    if (item.classList[0] === 'completed-btn') {
-
+    if (item.classList[0] === 'completed-btn' ) {
         const todo = item.parentElement;
-        todo.classList.toggle("completed");
+        todo.classList.add("completed");
+    }else{
+      false
     }
 
 }
